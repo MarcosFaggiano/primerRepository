@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CONTACTO</title>
-    <script src="Scripts.js" defer></script>
-    <link rel="stylesheet" href="Stiles.css" />
+    <script src="../Scripts.js" defer></script>
+    <link rel="stylesheet" href="../Stiles.css" />
   </head>
   <body>
     <header>
@@ -18,7 +18,52 @@
       </nav>
     </header>
     <main>
-      <h2>Soy un contacto</h2>
+      <h2>Formulario de Contacto</h2>
+      <form id="Form">
+        <fieldset>
+          <legend>Formulario</legend>
+          <label for="Apellido">Apellido</label>
+          <input type="Apellido" id="Apellido" name="Apellido" />
+          <br />
+          <br />
+          <label for="Nombre">Nombre</label>
+          <input type="text" id="Nombre" name="Nombre" />
+          <br />
+          <br />
+          <label for="Correo">Correo</label>
+          <input type="email" id="Correo" name="Correo" />
+          <br />
+          <br />
+          <label for="Edad">Edad</label>
+          <input type="number" id="Edad" name="Edad" />
+          <br />
+          <br />
+          <label for="Tiene Hijos?">Tiene Hijos?</label>
+          <input type="radio" id="input" name="Tiene Hijos?" />
+          <br />
+          <br />
+          <legend>Sexo</legend>
+          <input type="radio" id="input1" name="Genero" value="Masculino" />
+          <input type="radio" id="input2" name="Genero" value="Femenino" />
+          <input type="radio" id="input3" name="Genero" value="Otro" />
+          <br />
+          <br />
+          <label for="Pais">Pais</label>
+          <select name="pais" id="pais">
+            <option value="Arg">Argentina</option>
+            <option value="Bra">Brazil</option>
+            <option value="Col">Colombia</option>
+            <option value="Ecu">Ecuador</option>
+          </select>
+          <br />
+          <br />
+          <legend>Adjuntar D.N.I</legend>
+          <input type="File" id="File" name="File" />
+          <br />
+          <br />
+          <input type="submit" value="Enviar" />
+        </fieldset>
+      </form>
     </main>
     <footer>
       <p>Icaro 2021 - todos los derechos recervados</p>
